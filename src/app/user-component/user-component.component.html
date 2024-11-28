@@ -1,0 +1,42 @@
+<div class="row"> 
+    <div class="col-sm-12">
+        <div class="row" >
+            <div class="col-sm-2" style="background-color:greenyellow; text-align: center;">
+                <div class="row" style="margin-top: 20px;">
+                      <div class="col-sm-12"><a routerLink="admindetails" class="btn btn-success" > My Profile </a></div> 
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-sm-12">
+                        <input type="button" class="btn btn-success" value="Log Out" (click)="btn_Logout()" />
+                    </div> 
+              </div>
+            </div>
+            <div class="col-sm-10">
+                <div class= "row">
+                    <div class="col-sm-12">
+                        <table style = "width: 100%;" class = "table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Product Id</th>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Category</th>
+                                    <th>Created Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor = "let product of ProdList">
+                                    <td>{{product.productId}}</td>
+                                    <td>{{product.procuctName}}</td>
+                                    <td>{{product.productPrice}}</td>
+                                    <td>{{product.category}}</td>
+                                    <td>{{product.createdAt}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>

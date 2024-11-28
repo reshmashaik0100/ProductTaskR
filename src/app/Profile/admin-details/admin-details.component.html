@@ -1,0 +1,51 @@
+<div class="row" style="background-color: lightgrey;">
+    <div class="col-sm-12">
+        <div class="row" style="margin: 10px; border-radius: 5px; background-color: whitesmoke;">
+            <div class="col-sm-12">
+                <div class="row" style="text-align: center; color:darkcyan; margin-top: 10px; margin-bottom: 20px;">
+                    <div class="col-sm-12"><h1>My Profile</h1></div>
+                </div>
+                <div class="row" style=" margin-bottom: 10px;">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-2"><span style="font-weight: bold;">User ID</span></div>
+                    <div class="col-sm-3">
+                        <input type="text" *ngIf="loggedadmin" id="txtEmpID" [(ngModel)]="loggedadmin.userId" readonly="readonly" class="form-control" placeholder="please enter Employee id...!"/>                                
+                        </div>                             
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row" style=" margin-bottom: 10px;">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-2"><span style="font-weight: bold;">User Name</span></div>
+                    <div class="col-sm-3">
+                        <input type="text" *ngIf="loggedadmin" id="txtName"  [(ngModel)]="loggedadmin.username" readonly="readonly" class="form-control" placeholder="please enter name...!"/>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row" style=" margin-bottom: 10px;">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-2"><span style="font-weight: bold;">Email</span></div>
+                    <div class="col-sm-3">
+                        <input type="text" *ngIf="loggedadmin" id="txtEmail" [(ngModel)]="loggedadmin.email" readonly="readonly"  class="form-control" placeholder="please enter email...!"/>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row" style=" margin-bottom: 10px;">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-2"><span style="font-weight: bold;">Password</span></div>
+                    <div class="col-sm-3">
+                        <input type="password" *ngIf="loggedadmin" id="txtPWD" [(ngModel)]="loggedadmin.password"   class="form-control" placeholder="please enter Password...!"/>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row" style=" margin-bottom: 10px;">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-2"><span style="font-weight: bold;">Role</span></div>
+                    <div class="col-sm-3">
+                        <input type="text" *ngIf="loggedadmin" id="txtPhone" [(ngModel)]="loggedadmin.role"  class="form-control" placeholder="please enter phone...!"/>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

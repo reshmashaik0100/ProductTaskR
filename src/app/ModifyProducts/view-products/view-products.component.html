@@ -1,0 +1,50 @@
+<style>
+    table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    }
+    th, td {
+    background-color:lightgrey;
+}
+</style>
+
+<div>
+    <div>
+        <div class = "row" style = "color:olive; background-color: lightgrey ;">
+            <div class= "col-sm-12">
+              <h1> Product Details</h1>  
+            </div>
+        </div> 
+        <div class= "row">
+            <div class="col-sm-12">
+                <table style = "width: 100%;" class = "table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Product Id</th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Created Date</th>
+                            <th>Modify</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor = "let product of ProdList">
+                            <td>{{product.productId}}</td>
+                            <td>{{product.procuctName}}</td>
+                            <td>{{product.productPrice}}</td>
+                            <td>{{product.category}}</td>
+                            <td>{{product.createdAt}}</td>
+                            <td>
+                            <input type="button" id="btnUpdate" value="Update" class="btn btn-success"  />  &nbsp;&nbsp; &nbsp;
+                            <input type="button" id="btnDelete" value="Delete" class="btn btn-danger"  /> 
+                            </td>
+                            <!-- (click)="btnUpdate_Click(emp.docEmpId)"
+                            (click)="btnDelete_Click(emp.docEmpId)" -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+    </div>
+</div>

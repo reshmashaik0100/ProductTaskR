@@ -1,0 +1,52 @@
+<div style="margin-top: 10px;">
+    <div class="row" style="margin: top 10px;margin-bottom: 15px ;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Username :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="cUser.username" id="txtName" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Email :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="cUser.email" id="txtEmail" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Enter Password :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="cUser.password" id="txtPwd" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Select Role :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="cUser.role" id="txtPwd" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 3%;">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <input type="button" (click)="btn_Register()" style="margin-left: 50px;" value="Submit" id="btnSubmit" class="btn btn-success">
+            <input type="button" style="margin-left: 40px;" value="Reset" id="btnReset" class="btn btn-warning">
+            <input type="button" style="margin-left: 40px;" value="Cancel" id="btnCancel" class="btn btn-danger">
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    
+</div>

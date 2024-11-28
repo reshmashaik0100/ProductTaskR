@@ -1,0 +1,41 @@
+<div style="margin-top: 10px;">
+    <div class="row" style="margin: top 10px;margin-bottom: 15px ;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Product Name:</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="product.procuctName" id="txtPName" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Price</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="product.productPrice" id="txtPrice" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <h4>Select Category :</h4>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="product.category" id="txtcategory" class="form-control" />
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="margin-bottom: 3%;">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <input type="button" style="margin-left: 50px;" value="ADD" id="btnSubmit" (click)="btn_register();" class="btn btn-success">
+            <input type="button" style="margin-left: 40px;" value="Reset" id="btnReset" class="btn btn-warning">
+            <input type="button" style="margin-left: 40px;" value="Cancel" id="btnCancel" class="btn btn-danger">
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
